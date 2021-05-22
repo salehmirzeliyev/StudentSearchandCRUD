@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class CRUDoperation extends Student {
+    private static final String ONLY_WORD_REGEX = "[a-zA-Z]+";
     Student student = new Student();
 
     public static List<Student> allStudents = new ArrayList<>();
@@ -45,7 +46,7 @@ public class CRUDoperation extends Student {
             System.out.println(text);
             Scanner scanner=new Scanner(System.in);
             myInput=scanner.nextLine();
-        }while(myInput.length()==0);
+        }while(myInput.length()==0 || !Pattern.matches(ONLY_WORD_REGEX,myInput));
         return myInput;
     }
 
