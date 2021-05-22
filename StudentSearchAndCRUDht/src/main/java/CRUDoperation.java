@@ -29,14 +29,30 @@ public class CRUDoperation extends Student {
         String fatherName = addStringInput("Enter fathername");
         System.out.println("Enter email");
         String email = input.nextLine();
-        System.out.println("Enter phone number");
-        String phoneNumber = input.nextLine();
+        String phoneNumber=checkPhone();
         Student newStudent = new Student(idGenerator(), name, surname, fatherName, email, phoneNumber);
         allStudentsHashMapName.put((newStudent.getName() + newStudent.getId()), newStudent);
         allStudentsHashMapSurName.put((newStudent.getUsername() + newStudent.getId()), newStudent);
         allStudentsHashMapFather.put((newStudent.getFathername() + newStudent.getId()), newStudent);
         allStudentsHashMapID.put((newStudent.getId()), newStudent);
         addJson();
+    }
+
+    private String checkPhone() {
+        Matcher matcher = null;
+        String phoneNumber="";
+        do{
+            Scanner input = new Scanner(System.in);
+            System.out.println("Enter phone number");
+            phoneNumber = input.nextLine();
+            Pattern pattern = Pattern.compile("[+]{1}[9]{2}[4]{1}(([5]([0]|[1]|[5]))|([7]([0]|[7]))|([9]([9])))[1-9][0-9]{6}");
+            matcher = pattern.matcher(phoneNumber);
+            if (!matcher.matches()) {
+                System.out.println("Enter phone number (Ex: +994(50/51/55/70/77/99)5555555)!!!");
+            }
+        }
+        while(!matcher.matches());
+        return phoneNumber;
     }
 
     public static String addStringInput(String text){
