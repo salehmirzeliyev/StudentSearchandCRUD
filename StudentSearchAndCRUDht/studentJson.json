@@ -1,0 +1,95 @@
+{
+  "id": 0,
+  "students": {
+    "88512": {
+      "id": 88512,
+      "name": "Elman",
+      "surname": "Elmanli",
+      "fatherName": "sa",
+      "email": "aksmdm@box.az",
+      "phoneNumber": "+994774708000",
+      "isChangeOrNot": false
+    },
+    "71936": {
+      "id": 71936,
+      "name": "test",
+      "surname": "test2",
+      "fatherName": "test3",
+      "email": "iqbal@box.az",
+      "phoneNumber": "4564",
+      "isChangeOrNot": false
+    },
+    "1251": {
+      "id": 1251,
+      "name": "wed1ew",
+      "surname": "wedew",
+      "fatherName": "fefewf",
+      "email": "wefewf",
+      "phoneNumber": "ewf",
+      "isChangeOrNot": false
+    },
+    "4469": {
+      "id": 4469,
+      "name": "pgbal",
+      "surname": "Hasanli",
+      "fatherName": "Zahid",
+      "email": "iqbal.hoff@list.ru",
+      "phoneNumber": "+994506705569",
+      "isChangeOrNot": false
+    },
+    "4646": {
+      "id": 4646,
+      "name": "Javid ",
+      "surname": "Bagirli",
+      "fatherName": "Habil",
+      "email": "cavid@box.az",
+      "phoneNumber": "+99450505050",
+      "isChangeOrNot": false
+    },
+    "4585": {
+      "id": 4585,
+      "name": "Zgbal2",
+      "surname": "Hasanli",
+      "fatherName": "Zahid",
+      "email": "iqbal.hoff@list.ru",
+      "phoneNumber": "+994506705569",
+      "isChangeOrNot": false
+    },
+    "22569": {
+      "id": 22569,
+      "name": "asdad",
+      "surname": "sdfasf",
+      "fatherName": "sdf",
+      "email": "sasalk@mail.com",
+      "phoneNumber": "+994513444034",
+      "isChangeOrNot": false
+    },
+    "4588": {
+      "id": 4588,
+      "name": "Janan",
+      "surname": "Hasanli",
+      "fatherName": "Zahid",
+      "email": "iqbal.hoff@list.ru",
+      "phoneNumber": "+994506705569",
+      "isChangeOrNot": false
+    },
+    "67484": {
+      "id": 67484,
+      "name": "sadsad",
+      "surname": "sadsadas",
+      "fatherName": "sadsad",
+      "email": "asasdasd@box.az",
+      "phoneNumber": "+994506705569",
+      "isChangeOrNot": false
+    },
+    "41198": {
+      "id": 41198,
+      "name": "sadsa",
+      "surname": "dsads",
+      "fatherName": "adas",
+      "email": "dasd@box.az",
+      "phoneNumber": "+994506705569",
+      "isChangeOrNot": false
+    }
+  }
+}
