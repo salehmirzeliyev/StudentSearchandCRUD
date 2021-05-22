@@ -15,6 +15,7 @@ import java.util.stream.Stream;
 
 public class CRUDoperation extends Student {
     private static final String ONLY_WORD_REGEX = "[a-zA-Z]+";
+    private static final String EMAIL_REGEX = "([a-zA-Z0-9_.+-])+\\@(([a-zA-Z0-9-])+\\.)+([a-zA-Z0-9]{2,4})";
     Student student = new Student();
 
     public static List<Student> allStudents = new ArrayList<>();
@@ -29,7 +30,7 @@ public class CRUDoperation extends Student {
         String surname =addStringInput("Enter surname:");;
         String fatherName = addStringInput("Enter fathername");
         System.out.println("Enter email");
-        String email = input.nextLine();
+        String email = checkIsEmail();
         System.out.println("Enter phone number");
         String phoneNumber = input.nextLine();
         Student newStudent = new Student(idGenerator(), name, surname, fatherName, email, phoneNumber);
@@ -38,6 +39,19 @@ public class CRUDoperation extends Student {
         allStudentsHashMapFather.put((newStudent.getFathername() + newStudent.getId()), newStudent);
         allStudentsHashMapID.put((newStudent.getId()), newStudent);
         addJson();
+    }
+
+    public static String checkIsEmail(){
+        String mail;
+        do {
+            System.out.println("Enter your email:");
+            Scanner scanner=new Scanner(System.in);
+            mail=scanner.nextLine();
+            if (!Pattern.matches(EMAIL_REGEX,mail)){
+                System.out.println("Please,write correct email!");
+            }
+        }while(mail.length()==0 || !Pattern.matches(EMAIL_REGEX,mail));
+        return mail;
     }
 
     public static String addStringInput(String text){
