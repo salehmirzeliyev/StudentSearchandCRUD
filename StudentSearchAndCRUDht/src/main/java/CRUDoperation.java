@@ -46,6 +46,7 @@ public class CRUDoperation extends Student {
             Scanner scanner=new Scanner(System.in);
             myInput=scanner.nextLine();
         }while(myInput.length()==0);
+        return myInput;
     }
 
     public void showAllStudents() {
